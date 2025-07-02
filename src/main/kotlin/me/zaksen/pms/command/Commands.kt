@@ -25,7 +25,10 @@ object Commands {
     fun register() {
         CommandRegistrationCallback.EVENT.register { dispatcher, registryAccess, environment ->
             dispatcher.register(buildIgnoreCommand())
-            dispatcher.register(buildReplyCommand())
+
+            val reply = dispatcher.register(buildReplyCommand())
+            dispatcher.register(CommandManager.literal("/r").redirect(reply))
+
             dispatcher.register(buildPmCommand())
         }
     }
