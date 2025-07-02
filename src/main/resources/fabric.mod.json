@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "pms",
+  "version": "${version}",
+  "name": "PersonalMessages",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/pms/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "me.zaksen.pms.Pms"
+    ]
+  },
+  "mixins": [
+    "pms.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

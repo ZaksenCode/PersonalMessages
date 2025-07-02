@@ -1,0 +1,10 @@
+# Message, that sender will be received when use /pm
+# Supported placeholders: <from-name>, <to-name>, <message>
+message_format_from: "<gray>[<aqua>you</aqua>] -> [<aqua><to-name></aqua>]: <white><message>"
+# Message, that will be received when other player use /pm
+# Supported placeholders: <from-name>, <to-name>, <message>
+message_format_to: "<gray>[<aqua><from-name></aqua>] -> [<aqua>you</aqua>]: <white><message>"
+# Supported placeholders: <player>
+ignore_on_message: "<red>Now you will not receive personal messages from <player>"
+# Supported placeholders: <player>
+ignore_off_message: "<green>Now you will receive personal messages from <player>"
